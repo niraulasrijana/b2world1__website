@@ -13,57 +13,120 @@ body{
 header{
     background: #007bff;
     padding: 15px;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar-links{
-display: flex;
-list-style: none;
-gap: 20px;
-}
-.nav-links a{
-    color:  white;
-    text-decoration: none;
-}
-section{
-    padding: 50px 20px;
+    color: white;
     text-align: center;
 }
-.hero{
+.nav a{
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+}
+.nav:hover{
+color: yellow;
+}
+.logo{
+    width: 150px;
+    margin-bottom:20px ;
+}
+
+.hero h2{
     background: #007bff;
     color: white;
     padding:  80px 20px;
+    font-size: 40px;
 }
-button{
-    padding: 10px 20px;
-    background: #007bff;
-    color: #f4f4f4;
-    border: none;
-    cursor: pointer;
+.hero p{
+    margin: 20PX 0;
+    font-size: 18px;
 }
-.card,.service-card,.project-card{
-background: #f4f4f4;
-padding: 20px;
-margin: 15px;
-border-radius: 15px;
-box-shadow: 0 2px 8px rgba(0,0,0.1);
-}
-form{
-    max-width: 500px;
-    margin: auto;
-}
+.btn;button{
+    background:#0b3d91;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    text-decoration:none;
+    cursor:pointer;
+    }
 
+    .btn:hover,
+        button:hover{
+background: #062c6b;
+ }
+
+ section{
+    padding:50px 20px;
+    text-align:center;
+ }
+
+ .projects{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.project-card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px;
+    rgba :(0,0,0,0.2);
+    padding:15px;
+}
+.team{
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.team-card{
+    width:250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px
+    rgba(0,0,0,0.2);
+padding: 20px;
+}
+.team-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50px;
+    box-shadow: none0 0 10px
+    rgba(0,0,0,0.2);
+}
 input,textarea{
     width:100%;
     padding: 10px;
     margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 footer{
     background: #222;
     color: white;
     text-align: center;
     margin-top: 20px;
+    padding: 15px;
+}
+@media(max-width:768px){
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+    form{
+        width: 90%;
+    }
+    .projects,
+    .team{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card,
+    .team-card{
+        width: 90%;
+    }
+    hero h2{
+        font-size: 30px;
+    }
 }
